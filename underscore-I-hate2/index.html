@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../lib/underscore-min.js"></script>
+<script src="script.js"></script>
+<style>
+	th, td {
+		padding: .3em .5em;
+		border:1px solid black;
+	}
+</style>
+</head>
+<body>
+<script id="source" type="text/x-template">
+	<table>
+		<thead>
+			<tr>
+				<th>商品名</th>
+				<th>値段</th>
+				<th>カテゴリ</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% _.each(products, function(product) { %>
+				<tr>
+					<th><%- product.name %></th>
+					<td><%- product.price %>円</td>
+					<td>
+						<% if(product.categories) { %>
+							<ul>
+								<% _.each(product.categories, function(category) { %>
+									<li><%- category %></li>
+								<% }); %>
+							</ul>
+						<% } %>
+					</td>
+				</tr>
+			<% }); %>
+		</tbody>
+	</table>
+</script>
+</body>
+</html>

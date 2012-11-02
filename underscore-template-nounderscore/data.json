@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "name": "TV", "price": "10000" },
+    { "name": "toaster", "price": "3000" },
+    { "name": "shaver", "price": "4000" }
+  ]
+}
