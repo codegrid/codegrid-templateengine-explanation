@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "name": "TV",
+      "price": "10000",
+      "categories": [ "ファミリー", "プレゼント" ]
+    },
+    {
+      "name": "toaster",
+      "price": "3000",
+      "categories": [ "プレゼント" ]
+    }
+  ]
+}

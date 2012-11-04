@@ -1,0 +1,12 @@
+{
+  "people": [
+    {
+      "name": "Yamada Taro",
+      "male": true
+    },
+    {
+      "name": "Suzuki Hanako",
+      "female" :true
+    }
+  ]
+}
